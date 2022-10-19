@@ -4,3 +4,8 @@ node_modules
 dist
 # don't lint nyc coverage output
 coverage
+
+# don't lint webpack config files
+webpack.common.js
+webpack.dev.js
+webpack.prod.js
