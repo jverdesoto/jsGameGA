@@ -4,7 +4,7 @@ export class Component {
 		console.log( num1 * num2 );
 	}
 
-	hello(): void {
+	hello(): void { //declarar metodo, que devuelve void significa sin return, devuelve vacio 
 		// eslint-disable-next-line no-undef
 		console.log('Hola!');
 	}
