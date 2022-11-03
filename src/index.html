@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JS Game</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
 </head>
 <body>
-	<div class="container">
-		<h1>Let's Play!</h1>
-		<div class="screen">
-			<div id="hero" class="hero" data-hero></div>
-		</div>
-	</div>
+    <header>
+        <h1>Hola Mundo</h1>
+    </header>
+    <main>
+        <section class="formulario">
+            <form id="misNotas" action="/" method="post"> <!-- ACTION dice qué hacer cuando SUBMIT .  METHOD dice cómo manda la info a través de http hacia donde yo vaya a aejecutar mi acción. Get es inseguro porque puedo ver la info que envío en el navegador, afecta al frontend. Agrega variables a la URL para que pueda trabajar con ellas. Post es más seguro, no afecta al frontend, lo hace todo por detrás.-->
+                <label for="titulo">Título</label>
+                <input type="text" name="titulo" id="titulo" placeholder="Escribe un título para tu nota" autofocus> <!-- No hay que cerrarlo --> <!-- NAME lo toma el navegador como nombre de la variable -->
+                        
+                <label for="area">Nota</label>
+                <textarea name="area" id="area" cols="30" rows="10"></textarea> <!-- Necesita etiqueta de cierre -->
+                
+                <input type="submit" id="submit" value="Enviar"> <!-- Dice al formulario que tiene que hacer la accion que yo le dije en ele parámetro de arriba (POST) -->
+                
+                <!--
+                <input type="number">
+                <input type="date" name="" id="">
+                <input type="password" placeholder="Escribe aquí">
+                <input type="checkbox">
+                <input type="button" value="Hola">
+                <input type="hidden" value="Este valor no se muestra">
+                <label for="radio">Escoge una opción</label>
+                <input type="radio" name="radio" value="1">  Poner mismo nombre a todos los RADIO hace que solo deje elegir uno -->
+                <!--
+                    <input type="radio" name="radio" value="2">
+                <input type="radio" name="radio" value="3">
+                <input type="radio" name="radio" value="4">
+                <input type="radio" name="radio" value="5">
+                    <label for="select">Selecciona una opción</label>
+                <select name="select" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                -->
+            </form>   
+        </section>
+        <section class="notas">
+            <h2>Mis notas:</h2>
+            <article id="result"></article>
+        </section>
+    </main>
 </body>
 </html>
