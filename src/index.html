@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">\
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JS Game</title>
+	<title>Notas</title>
 </head>
 <body>
-	<div class="container">
-		<h1>Let's Play!</h1>
-		<div class="screen">
-			<div id="hero" class="hero" data-hero></div>
-		</div>
-	</div>
+    <main>
+        <h1>Notas</h1>
+        <section class="formulario">
+            <form id="misNotas" action="/">
+                <label for="titulo">Titulo</label>
+                <input required type="text" name="titulo" id="titulo" placeholder="Escribe un título para tu nota">  
+                <label for="area">Nota</label>
+                <textarea name="area" id ="area" cols="30" rows="10"></textarea>
+              
+                <input type="submit" id="submit" value="Enviar">
+            </form>
+        </section>
+        <section class="notas">
+            <h2>Mis Notas:</h2>
+            <article id="result"></article>
+        </section>
+    </main>
+
 </body>
 </html>
+
+<!-- placeholder es el texto que se ve dentro del input y desaparece cuando empiezas a escribir -->
