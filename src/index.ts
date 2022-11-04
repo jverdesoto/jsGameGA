@@ -71,13 +71,17 @@ document.getElementById('submit').addEventListener('click', (event) => {
 	iconos.classList.add('iconos');					/* Le asignamos la clase TN */
 	el.appendChild(iconos);							/* Metemos el DIV dentro del DIV "el" */
 
-	const pencil = document.createElement('img');	/* Creamos un IMG y le asignamos la constante "pencil" */
-	pencil.src = './assets/images/lapiz.png';		/* A IMG le añadimos el atributo SRC y le metemos la ruta a la imagen */
+	const pencil = document.createElement('div');	/* Creamos un IMG y le asignamos la constante "pencil" */
+	pencil.classList.add('lapiz');
+	pencil.innerHTML = '✎';
+	// pencil.src = './assets/images/lapiz.png';	/* A IMG le añadimos el atributo SRC y le metemos la ruta a la imagen */
 	iconos.appendChild(pencil);						/* Metemos el IMG con su contenido dentro del DIV "el" */
 
-	const trush = document.createElement('img');	/* Creamos un IMG y le asignamos la constante "trush" */
-	trush.src = './assets/images/papelera.png';		/* A IMG le añadimos el atributo SRC y le metemos la ruta a la imagen */
-	iconos.appendChild(trush);						/* Metemos el IMG con su contenido dentro del DIV "el" */
+	const trash = document.createElement('div');	/* Creamos un IMG y le asignamos la constante "trush" */
+	trash.classList.add('cubo');
+	trash.innerHTML = '🗑';
+	// trush.src = './assets/images/papelera.png';	/* A IMG le añadimos el atributo SRC y le metemos la ruta a la imagen */
+	iconos.appendChild(trash);						/* Metemos el IMG con su contenido dentro del DIV "el" */
 
 	titYNot = document.createElement('div');		/* Creamos un DIV y le asignamos la variable "titYNot" */
 	titYNot.classList.add('tn');					/* Le asignamos la clase TN */
