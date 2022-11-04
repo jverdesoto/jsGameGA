@@ -39,6 +39,9 @@ document.getElementById('submit').addEventListener('click', (e) => {
 	let el;
 	let elTitulo;
 	let elContent;
+	let edit;
+	let trash;
+	let iconos;
 	let hr;
 	if (titulo.value === '' || area.value === '') {
 		alert('ingresa los campos');
@@ -47,6 +50,8 @@ document.getElementById('submit').addEventListener('click', (e) => {
 
 	el = document.createElement('div');
 	el.classList.add('nota');
+	let unique = `${document.getElementsByClassName('nota').length}`
+	el.setAttribute("id", unique);
 
 	elTitulo = document.createElement('h3');
 	elTitulo.innerHTML = titulo.value;
@@ -56,6 +61,20 @@ document.getElementById('submit').addEventListener('click', (e) => {
 	elContent.innerHTML = area.value;
 	el.appendChild(elContent);
 
+	iconos = document.createElement('div');
+	iconos.classList.add('iconos');
+	el.appendChild(iconos);
+
+	edit = document.createElement('button');
+	edit.innerHTML = '\u{2710}';
+	edit.setAttribute('id', 'edit');
+	iconos.appendChild(edit);
+
+	trash = document.createElement('button');
+	trash.innerHTML = "\u{1F5D1}";
+	trash.setAttribute('id', 'delete');
+	iconos.appendChild(trash);
+
 	hr = document.createElement('hr');
 	el.appendChild(hr);
 
@@ -63,3 +82,19 @@ document.getElementById('submit').addEventListener('click', (e) => {
 	titulo.value = '';
 	area.value = '';
 });
+
+document.getElementById('edit').addEventListener('click', (e) => {
+	e.preventDefault();
+	
+	
+});
+
+document.getElementById('delete').addEventListener('click', (e) => {
+	e.preventDefault();
+	el.classList.remove("nota");
+});
+
+// function Delete(unique) {
+// 	const el = <HTMLInputElement>document.getElementById(unique);
+// 	el.classList.remove("nota");
+// }
