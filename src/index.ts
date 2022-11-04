@@ -33,9 +33,9 @@ import './scss/styles.scss';
 
 document.getElementById('submit').addEventListener('click', (e) => {
 	e.preventDefault();
-	const titulo = document.getElementById('titulo');
-	const area = document.getElementById('area');
-	const resultado = document.getElementById('result');
+	const titulo = <HTMLInputElement>document.getElementById('titulo');
+	const area = <HTMLInputElement>document.getElementById('area');
+	const resultado = <HTMLInputElement>document.getElementById('result');
 	let el;
 	let elTitulo;
 	let elContent;
