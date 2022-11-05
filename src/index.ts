@@ -71,13 +71,13 @@ document.getElementById('submit').addEventListener('click', (event) => {
 	iconos.classList.add('iconos');					/* Le asignamos la clase TN */
 	el.appendChild(iconos);							/* Metemos el DIV dentro del DIV "el" */
 
-	const pencil = document.createElement('div');	/* Creamos un IMG y le asignamos la constante "pencil" */
+	const pencil = document.createElement('i');	/* Creamos un IMG y le asignamos la constante "pencil" */
 	pencil.classList.add('lapiz');
 	pencil.innerHTML = '✎';
 	// pencil.src = './assets/images/lapiz.png';	/* A IMG le añadimos el atributo SRC y le metemos la ruta a la imagen */
 	iconos.appendChild(pencil);						/* Metemos el IMG con su contenido dentro del DIV "el" */
 
-	const trash = document.createElement('div');	/* Creamos un IMG y le asignamos la constante "trush" */
+	const trash = document.createElement('i');	/* Creamos un IMG y le asignamos la constante "trush" */
 	trash.classList.add('cubo');
 	trash.innerHTML = '🗑';
 	// trush.src = './assets/images/papelera.png';	/* A IMG le añadimos el atributo SRC y le metemos la ruta a la imagen */
@@ -106,3 +106,11 @@ document.getElementById('submit').addEventListener('click', (event) => {
 
 /* ******************** MODIFICAR TITULO Y TEXTO A LAS NOTAS ****************** */
 
+// document.getElementById('modificar').addEventListener('click', (event) => {
+// 	event.preventDefault();
+
+// 	let erase;
+
+// 	erase = prompt('Que nota quieres eliminar?');
+	
+// });
