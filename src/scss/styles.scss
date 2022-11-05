@@ -1,43 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
-
-$silkscreen: 'Silkscreen', cursive;
-
-*, *::before, *::after {
-	box-sizing: border-box;
-	font-family: $silkscreen;
-	font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400&display=swap');
+$roboto: 'Roboto', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
 
 body {
-	background: linear-gradient(to right, #00AAFF, #0f6332);
-	padding: 0;
-	margin: 0;
+    font-family: $roboto;
 }
 
-.container {
-	padding: 15px 50px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: $montserrat;
+}
+.formulario {
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        input[type='text'],  texarea {
+            padding: 10px;
+        }
+        label {
+            color: brown;
+            font-weight: 900;
+        }
+        input[type="submit"] {
+            background-color: #089218;
+            border-radius: 7px;
+            color: #070b06;
+            cursor: pointer;
+            font-weight: 600;
+            padding: 15px;
+            transition: all 0.3s ease;
+            &:hover {
+                background-color: lighten(#089218, 25%);
+            }
 
-	h1 {
-		color: white;
-		font-size: 48px;
-	}
-
-	.screen {
-		background-image: url(../assets/backdrop.png);
-		background-size: contain;
-		border: #7c5d08 4px solid inset;
-		height: 800px;
-		margin: 0 auto;
-		position: relative;
-		width: 800px;
-
-		.hero {
-			background-image: url(../assets/halloween/horseman/horseman_a_1.png);
-			background-position: -104px 104px;
-			height: 52px;
-			left: 218px;
-			position: absolute;
-			width: 52px;
-		}
-	}
+        }
+    }
+    
 }

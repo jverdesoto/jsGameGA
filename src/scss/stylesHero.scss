@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+$silkscreen: 'Silkscreen', cursive;
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	font-family: $silkscreen;
+	font-weight: normal;
+}
+
+body {
+	background: linear-gradient(to right, #00AAFF, #0f6332);
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	padding: 15px 50px;
+
+	h1 {
+		color: white;
+		font-size: 48px;
+	}
+
+	.screen {
+		background-image: url(../assets/backdrop.png);
+		background-size: contain;
+		border: #7c5d08 4px solid inset;
+		height: 800px;
+		margin: 0 auto;
+		position: relative;
+		width: 800px;
+
+		.hero {
+			background-image: url(../assets/halloween/horseman/horseman_a_1.png);
+			background-position: -104px 104px;
+			height: 52px;
+			left: 218px;
+			position: absolute;
+			width: 52px;
+		}
+	}
+}
