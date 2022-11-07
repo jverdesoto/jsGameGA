@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">\
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JS Game</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Notas</title>
 </head>
+
 <body>
-	<div class="container">
-		<h1>Let's Play!</h1>
-		<div class="screen">
-			<div id="hero" class="hero" data-hero></div>
-		</div>
-	</div>
+  <h1>Notas</h1>
+  <section class="formulario">
+    <form id="misNotas" action="/" method="post">
+      <label for="titulo">Titulo</label>
+      <input type="text" name="titulo" placeholder=" Tus notas">
+
+      <label for="area">Nota</label>
+      <textarea name="area" id="" cols="30" rows="10"></textarea>
+
+      <input type="submit" value="Enviar">
+  </section>
+  <section class="notas">
+    <h2>Mi notas:</h2>
+    <article id="result"></article>
+
+  </section>
+  </form>
 </body>
+
 </html>

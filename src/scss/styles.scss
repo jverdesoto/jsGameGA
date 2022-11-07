@@ -1,43 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 
-$silkscreen: 'Silkscreen', cursive;
+// $silkscreen: 'Silkscreen', cursive;
 
-*, *::before, *::after {
-	box-sizing: border-box;
-	font-family: $silkscreen;
-	font-weight: normal;
-}
+// *, *::before, *::after {
+// 	box-sizing: border-box;
+// 	font-family: $silkscreen;
+// 	font-weight: normal;
+// }
+
+// body {
+// 	background: linear-gradient(to right, #00AAFF, #0f6332);
+// 	padding: 0;
+// 	margin: 0;
+// }
+
+// .container {
+// 	padding: 15px 50px;
+
+// 	h1 {
+// 		color: white;
+// 		font-size: 48px;
+// 	}
+
+// 	.screen {
+// 		background-image: url(../assets/backdrop.png);
+// 		background-size: contain;
+// 		border: #7c5d08 4px solid inset;
+// 		height: 800px;
+// 		margin: 0 auto;
+// 		position: relative;
+// 		width: 800px;
+
+// 		.hero {
+// 			background-image: url(../assets/halloween/horseman/horseman_a_1.png);
+// 			background-position: -104px 104px;
+// 			height: 52px;
+// 			left: 218px;
+// 			position: absolute;
+// 			width: 52px;
+// 		}
+// 	}
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$roboto: "Roboto", sans-serif;
+$monse: "Love Ya Like A Sister", cursive;
 
 body {
-	background: linear-gradient(to right, #00AAFF, #0f6332);
-	padding: 0;
-	margin: 0;
+  font-family: $monse;
 }
 
-.container {
-	padding: 15px 50px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $roboto;
+}
 
-	h1 {
-		color: white;
-		font-size: 48px;
-	}
-
-	.screen {
-		background-image: url(../assets/backdrop.png);
-		background-size: contain;
-		border: #7c5d08 4px solid inset;
-		height: 800px;
-		margin: 0 auto;
-		position: relative;
-		width: 800px;
-
-		.hero {
-			background-image: url(../assets/halloween/horseman/horseman_a_1.png);
-			background-position: -104px 104px;
-			height: 52px;
-			left: 218px;
-			position: absolute;
-			width: 52px;
-		}
-	}
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  input[type="text"],
+  textarea {
+    padding: 10px;
+  }
+  label {
+    color: rgb(189, 207, 23);
+  }
+  input[type="submit"] {
+    color: rgb(252, 252, 252);
+    padding: 15px;
+    background-color: rgb(48, 127, 180);
+    cursor: pointer;
+    border-radius: 10px;
+    &:hover {
+      background-color: lighten(rgb(137, 137, 207), 8%);
+    }
+  }
 }
